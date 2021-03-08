@@ -6,6 +6,7 @@ body{
 }
 header{
     width: 100%;
+    height: auto;
     text-align: center;
     img{
         width: 45vw;
@@ -13,7 +14,7 @@ header{
         margin-bottom: 3.8vw;
     }
 }
-.section-1{
+.section1{
     background-color: $gris-clair;
     width: 100%;
     height: 85vw;
@@ -26,7 +27,7 @@ header{
         height: 13vw;
         display: flex;
         flex-direction: row;
-        
+        box-shadow: inset 0vw 3vw 1vw -2vw rgb(204, 204, 204);
     }
     &__header i{
         font-size: 4.4vw;
@@ -47,7 +48,7 @@ header{
         align-items: center;
     }
     &__body h1{
-        font-size: 6.68vw;
+        font-size: $titre-section;
         text-align: center;
         margin-top: 9vw;
         margin-bottom: 3vw;
@@ -62,7 +63,105 @@ header{
         height: 11vw;
         font-size: 4vw;
         color: white;
-        background-color: purple;
+        background: linear-gradient(357deg, $primaire ,$secondaire);
         border: none;
+        box-shadow: $box-shadow;
+        border-radius: 25vw;
+    }
+}
+.section2{
+    width: 100%;
+    height: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        text-align: left;
+        width: 90vw;
+        font-size: $titre-section;
+    }
+    &__fonctionnement{
+        width: 86vw;
+        height: 17vw;
+        background-color: $gris-clair;
+        box-shadow: $box-shadow;
+        margin-bottom: 6vw;
+        border-radius: 5.4vw;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        &:hover{
+            background-color: lighten($primaire, 35);
+            i{
+                color: $primaire;
+            }
+        }
+    }
+    span{
+        background-color: $primaire;
+        width: 6.2vw;
+        height: 6.2vw;
+        border-radius: 100%;display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vw;
+        color: white;
+        margin-left: -2.7vw;
+        margin-right: 5vw;
+    }
+    i{
+        margin-right: 5vw;
+        font-size: 5vw;
+    }
+    p{
+        font-size: 5vw;
+    }
+}
+.section3{
+    background-color: $gris-clair;
+    padding: 4.5vw;
+    div{
+        background-color: white;
+        height: 75vw;
+        border-radius: 6vw;
+        margin-bottom: 6vw;
+    }
+    div div{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        justify-content: space-between;
+        margin-left: 4vw;
+        align-items: center;
+    }
+    i{
+        font-size: 6.3vw;
+        margin-right: 12vw;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        &:hover{
+            
+        }
+    }
+    .fas{
+        color: yellow;
+    }
+    h3{
+        margin-top: 1.5vw;
+        margin-bottom: 1vw;
+        font-size: 5vw;
+    }
+    p{
+        margin-top: 0.5vw;
+        margin-bottom: 0;
+        font-size: 4.7vw;
+    }
+    img{
+        width: 100%;
+        height: 56vw;
+        border-radius: 6vw 6vw 0 0;
+        object-fit: cover;
     }
 }
