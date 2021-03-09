@@ -132,20 +132,19 @@ header img {
 .restaurant h2 {
   font-size: 6.68vw;
 }
-.restaurant div {
-  background-color: white;
+.restaurant__div {
   height: 75vw;
   border-radius: 6vw;
   margin-bottom: 6vw;
+  background-color: white;
 }
-.restaurant div div {
+.restaurant__div div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: auto;
   width: auto;
-  justify-content: space-between;
-  margin-left: 4vw;
-  align-items: center;
+  margin-left: 2.5vw;
+  justify-content: center;
 }
 .restaurant i {
   font-size: 6.4vw;
