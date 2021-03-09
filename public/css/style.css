@@ -125,6 +125,13 @@ header img {
   background-color: #f7f7f7;
   padding: 4.5vw;
 }
+.restaurant a {
+  text-decoration: none;
+  color: black;
+}
+.restaurant h2 {
+  font-size: 6.68vw;
+}
 .restaurant div {
   background-color: white;
   height: 75vw;
@@ -196,5 +203,7 @@ header img {
 .footer .fa-hands-helping {
   font-size: 2.8vw;
 }
+
+/* PAGE RESTAURANT LA PALETTE DU GOUT */
 
 /*# sourceMappingURL=style.css.map */
