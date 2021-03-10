@@ -133,6 +133,7 @@ header{
         border-radius: 6vw;
         margin-bottom: 6vw;
         background-color: white;
+        box-shadow: $box-shadow;
     }
     &__div div{
         display: flex;
@@ -142,13 +143,18 @@ header{
         margin-left: 2vw;
         justify-content: center;
     }
-    i{
-        font-size: 6.4vw;
-        position: absolute;
-        right: 10vw;
-    }
     &__heart{
+        position: absolute;
+        font-size: 6.4vw;
+        right: 10vw;
+        margin-top: 1vw;
+    }
+    &__heart-like{
         background-size: 100%;
+        font-size: 6.4vw;
+        right: 10vw;
+        margin-top: 1vw;
+        position: absolute;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent; 
@@ -160,6 +166,7 @@ header{
         &:hover{
            opacity: 1;
            transform: scale(1.12);
+           width: 6.579vw;
         }
     }
     h3{
@@ -188,10 +195,10 @@ header{
     &__logo{
         font-family: Shrikhand;
         font-size: 6vw;
-        margin-left: 6vw;
+        margin-left: 8.5vw;
     }
     p{
-        margin-left: 6vw;
+        margin-left: 8.5vw;
         font-size: 3.8vw;
     }
     .fa-hands-helping{
@@ -199,3 +206,64 @@ header{
     }
 }
 /* PAGE RESTAURANT LA PALETTE DU GOUT */
+.body__image{
+    width: 100%;
+}
+.la-palette-du-gout{
+    background-color: $gris-clair;
+    border-radius: 12vw 12vw 0 0;
+    margin-top: -13vw;
+    position: relative;
+    padding-bottom: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__h1{
+        font-family: Shrikhand;
+        font-weight: 500;
+        margin-left: $margin-left-page;
+        margin-top: 0;
+        padding-top: 8vw;
+        font-size: $titre-section;
+        display: flex;
+        width: 95vw;
+    }
+    &__div{
+        height: auto;
+        margin-bottom: 10vw;
+        width: 95vw;
+    }
+    &__div h2{
+        font-size: 5vw;
+        font-weight: 500;
+        margin-bottom: 0.8vw;
+        margin-left: 1.7vw;
+    }
+    &__div span{
+        display: block;
+        width: 13vw;
+        border-bottom: 0.9vw solid $tertiaire;
+        margin-bottom: 3vw;
+        margin-left: 2vw;
+    }
+    &__div div{
+        height: 19vw;
+        width: 100%;
+        background-color: white;
+        border-radius: 4vw;
+        margin-bottom: 5vw;
+        box-shadow: $box-shadow;
+    }
+    button{
+        width: 45vw;
+        height: 11vw;
+        font-size: 4vw;
+        color: white;
+        background: linear-gradient(357deg, $primaire ,$secondaire);
+        border: none;
+        box-shadow: $box-shadow;
+        border-radius: 25vw;
+       
+    }
+}
+

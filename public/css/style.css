@@ -49,7 +49,7 @@ header img {
   align-items: center;
 }
 .lieu__body h1 {
-  font-size: 6.68vw;
+  font-size: 6.8vw;
   text-align: center;
   margin-top: 9vw;
   margin-bottom: 3vw;
@@ -66,7 +66,7 @@ header img {
   color: white;
   background: linear-gradient(357deg, #9356DC, #FF79DA);
   border: none;
-  box-shadow: 0vw 0.6vw 0.5vw 0.2vw #e0dede;
+  box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
   border-radius: 25vw;
 }
 
@@ -80,13 +80,13 @@ header img {
 .fonctionnement h2 {
   text-align: left;
   width: 90vw;
-  font-size: 6.68vw;
+  font-size: 6.8vw;
 }
 .fonctionnement__div {
   width: 86vw;
   height: 17vw;
   background-color: #f7f7f7;
-  box-shadow: 0vw 0.6vw 0.5vw 0.2vw #e0dede;
+  box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
   margin-bottom: 6vw;
   border-radius: 5.4vw;
   align-items: center;
@@ -130,13 +130,14 @@ header img {
   color: black;
 }
 .restaurant h2 {
-  font-size: 6.68vw;
+  font-size: 6.8vw;
 }
 .restaurant__div {
   height: 75vw;
   border-radius: 6vw;
   margin-bottom: 6vw;
   background-color: white;
+  box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
 }
 .restaurant__div div {
   display: flex;
@@ -146,13 +147,18 @@ header img {
   margin-left: 2vw;
   justify-content: center;
 }
-.restaurant i {
-  font-size: 6.4vw;
-  position: absolute;
-  right: 10vw;
-}
 .restaurant__heart {
+  position: absolute;
+  font-size: 6.4vw;
+  right: 10vw;
+  margin-top: 1vw;
+}
+.restaurant__heart-like {
   background-size: 100%;
+  font-size: 6.4vw;
+  right: 10vw;
+  margin-top: 1vw;
+  position: absolute;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -162,9 +168,10 @@ header img {
   opacity: 0;
   transition: all 0.3s cubic-bezier(0.42, 0, 0.73, 2.29);
 }
-.restaurant__heart:hover {
+.restaurant__heart-like:hover {
   opacity: 1;
   transform: scale(1.12);
+  width: 6.579vw;
 }
 .restaurant h3 {
   margin-top: 1.5vw;
@@ -193,10 +200,10 @@ header img {
 .footer__logo {
   font-family: Shrikhand;
   font-size: 6vw;
-  margin-left: 6vw;
+  margin-left: 8.5vw;
 }
 .footer p {
-  margin-left: 6vw;
+  margin-left: 8.5vw;
   font-size: 3.8vw;
 }
 .footer .fa-hands-helping {
@@ -204,5 +211,65 @@ header img {
 }
 
 /* PAGE RESTAURANT LA PALETTE DU GOUT */
+.body__image {
+  width: 100%;
+}
+
+.la-palette-du-gout {
+  background-color: #f7f7f7;
+  border-radius: 12vw 12vw 0 0;
+  margin-top: -13vw;
+  position: relative;
+  padding-bottom: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.la-palette-du-gout__h1 {
+  font-family: Shrikhand;
+  font-weight: 500;
+  margin-left: 4.5vw;
+  margin-top: 0;
+  padding-top: 8vw;
+  font-size: 6.8vw;
+  display: flex;
+  width: 95vw;
+}
+.la-palette-du-gout__div {
+  height: auto;
+  margin-bottom: 10vw;
+  width: 95vw;
+}
+.la-palette-du-gout__div h2 {
+  font-size: 5vw;
+  font-weight: 500;
+  margin-bottom: 0.8vw;
+  margin-left: 1.7vw;
+}
+.la-palette-du-gout__div span {
+  display: block;
+  width: 13vw;
+  border-bottom: 0.9vw solid #99E2D0;
+  margin-bottom: 3vw;
+  margin-left: 2vw;
+}
+.la-palette-du-gout__div div {
+  height: 19vw;
+  width: 100%;
+  background-color: white;
+  border-radius: 4vw;
+  margin-bottom: 5vw;
+  box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
+}
+.la-palette-du-gout button {
+  width: 45vw;
+  height: 11vw;
+  font-size: 4vw;
+  color: white;
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  border: none;
+  box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
+  border-radius: 25vw;
+}
 
 /*# sourceMappingURL=style.css.map */
