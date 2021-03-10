@@ -4,3 +4,8 @@
 @mixin roboto-bold {
     font-weight: 900;
 }
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

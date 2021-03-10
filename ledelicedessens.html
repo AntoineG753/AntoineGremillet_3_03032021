@@ -3,16 +3,133 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+    <link rel="stylesheet" href="./public/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>ohmyfood</title>
-    <link rel="stylesheet" href="./public/css/style.css" />
   </head>
   <body>
     <header>
-
+      <a href="index.html"><i class="fa-arrow-left fas header__arrow"></i></a>
+        <img src="images/logo/ohmyfood.png" alt="logo">
     </header>
-
-    <footer>
-
+    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="lapalettedugoût" class="body__image">
+    <section class="presentation">
+      <h1 class="presentation__h1">La palette du goût <i class="far fa-heart restaurant__heart"></i><i class="fas fa-heart restaurant__heart-like"></i></h1>
+      <div class="presentation__div">
+        <h2>ENTRÉES</h2>
+        <span></span>
+        <div class="delay-1 plat">
+          <div class="plat__text">
+            <h3>Tartare de thon</h3>
+            <p>Assaisonné au yuzu</p>
+          </div>
+          <p class="plat__prix"><strong>25€</strong></p>
+          <div class="confirmation">
+            <i class="fa-check fas confirmation__icon"></i>
+          </div>
+        </div>
+        <div class="delay-2 plat">
+          <div class="plat__text">
+            <h3>Bouchée de homard croustillant</h3>
+            <p>Et sa farandole de petits légumes</p>
+          </div>
+          <p class="plat__prix"><strong>35€</strong></p>
+          <div class="confirmation">
+            <i class="fa-check fas confirmation__icon"></i>
+          </div>
+        </div>
+        <div class="delay-3 plat"> 
+          <div class="plat__text">
+            <h3>Velouté de cèpes</h3>
+            <p>Aux truffes</p>
+          </div>
+          <p class="plat__prix"><strong>20€</strong></p>
+          <div class="confirmation">
+            <i class="fa-check fas confirmation__icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="presentation__div">
+        <h2>PLATS</h2>
+        <span></span>
+        <div class="delay-4 plat">
+          <div class="plat__text">
+            <h3>Poulet rôti aux herbes de Provence</h3>
+            <p>Et sa crème de truffe</p>
+          </div>
+          <p class="plat__prix"><strong>40€</strong></p>
+          <div class="confirmation">
+            <i class="fa-check fas confirmation__icon"></i>
+          </div>
+        </div>
+        <div class="delay-5 plat"> 
+          <div class="plat__text">
+            <h3>Langouste rôtie</h3>
+            <p>Et ses légumes de saison</p>
+          </div>
+          <p class="plat__prix"><strong>35€</strong></p>
+          <div class="confirmation">
+            <i class="fa-check fas confirmation__icon"></i>
+          </div>
+        </div>
+        <div class="delay-6 plat"> 
+          <div class="plat__text">
+            <h3>Côte de boeuf Angus</h3>
+            <p>Et sa purée de panais</p>
+          </div>
+          <p class="plat__prix"><strong>44€</strong></p>
+          <div class="confirmation">
+            <i class="fa-check fas confirmation__icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="presentation__div">
+        <h2>DESSERTS</h2>
+        <span></span>
+        <div class="delay-7 plat">
+          <div class="plat__text">
+            <h3>Farandole de desserts</h3>
+            <p>Du chef</p>
+          </div>
+          <p class="plat__prix"><strong>18€</strong></p>
+          <div class="confirmation">
+            <i class="fa-check fas confirmation__icon"></i>
+          </div>
+        </div>
+        <div class="delay-8 plat"> 
+          <div class="plat__text">
+            <h3>Crème brulée</h3>
+            <p>Revisitée</p>
+          </div>
+          <p class="plat__prix"><strong>22€</strong></p>
+          <div class="confirmation">
+            <i class="fa-check fas confirmation__icon"></i>
+          </div>
+        </div>
+        <div class="delay-9 plat"> 
+          <div class="plat__text">
+            <h3>Tiramisu</h3>
+            <p>À la noisette</p>
+          </div>
+          <p class="plat__prix"><strong>23€</strong></p>
+          <div class="confirmation">
+            <i class="fa-check fas confirmation__icon"></i>
+          </div>
+        </div>
+      </div>
+      <button>Commander</button>
+    </section>
+    <footer class="footer">
+      <span class="footer__logo">ohmyfood</span>
+      <div>
+        <p><i class="fas fa-utensils"></i>&ensp; Proposer un restaurant</p>
+        <p><i class="fas fa-hands-helping"></i>&ensp;Devenir partenaire</p>
+        <p>Mentions légale</p>
+        <p>Contact</p>
+      </div>
     </footer>
   </body>
 </html>

@@ -236,7 +236,7 @@ header{
 .body__image{
     width: 100%;
 }
-.la-palette-du-gout{
+.presentation{
     background-color: $gris-clair;
     border-radius: 12vw 12vw 0 0;
     margin-top: -13vw;
@@ -282,9 +282,8 @@ header{
         box-shadow: $box-shadow;
         display: flex;
         flex-direction: row;
-        animation: slidedown 0.9s forwards;
-        animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-        transform: scale(0);
+        overflow: hidden;
+        animation: slidedown 1s;
     }
     @for $i from 1 through 10 {
         .delay-#{$i}{
@@ -295,23 +294,54 @@ header{
         font-size: $text-plat;
         margin-left: 3.7vw;
         width: 70vw;
+        @include ellipsis;
     }
     .plat__text h3{
         margin-top: 4vw;
         margin-bottom: 2vw;
         font-size: 4.7vw;
+        @include ellipsis;
     }
     .plat__text p{
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
         margin: 0;
+        @include ellipsis;
         }
     .plat__prix{
         font-size: $text-plat;
-        margin-top: 11.5vw;
-        margin-right: auto;
+        margin-top: 12vw;
+        margin-right: 7vw;
         margin-left: 8vw;
+    }
+    .confirmation{
+        width: 0;
+        background-color: $tertiaire;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: all 0.7s;
+    }
+    .plat:hover .confirmation{
+        transform: scaleX(1);
+        width: 17vw;
+    }
+    .confirmation__icon{
+        color: $tertiaire;
+        background-color: white;
+        width: 6.5vw;
+        height: 6vw;
+        padding-top: 0.5vw;
+        display: flex;
+        font-size: 4vw;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20vw;
+        transform: rotate(360deg);
+        transition-duration: 0.9s;
+    }
+    .plat:hover .confirmation__icon{
+        transform: rotate(0);
     }
     button{
         width: 45vw;
@@ -322,6 +352,7 @@ header{
         border: none;
         box-shadow: $box-shadow;
         border-radius: 25vw;
+        margin-top: 6vw;
        
     }
     

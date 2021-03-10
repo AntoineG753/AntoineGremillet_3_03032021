@@ -249,7 +249,7 @@ header i {
   width: 100%;
 }
 
-.la-palette-du-gout {
+.presentation {
   background-color: #f7f7f7;
   border-radius: 12vw 12vw 0 0;
   margin-top: -13vw;
@@ -259,7 +259,7 @@ header i {
   flex-direction: column;
   align-items: center;
 }
-.la-palette-du-gout__h1 {
+.presentation__h1 {
   font-family: Shrikhand;
   font-weight: 500;
   margin-left: 4.5vw;
@@ -269,25 +269,25 @@ header i {
   display: flex;
   width: 95vw;
 }
-.la-palette-du-gout__div {
+.presentation__div {
   height: auto;
   margin-bottom: 4vw;
   width: 95vw;
 }
-.la-palette-du-gout__div h2 {
+.presentation__div h2 {
   font-size: 5vw;
   font-weight: 500;
   margin-bottom: 0.8vw;
   margin-left: 1.7vw;
 }
-.la-palette-du-gout__div span {
+.presentation__div span {
   display: block;
   width: 13vw;
   border-bottom: 0.9vw solid #99E2D0;
   margin-bottom: 3vw;
   margin-left: 2vw;
 }
-.la-palette-du-gout .plat {
+.presentation .plat {
   height: 20vw;
   width: 100%;
   background-color: white;
@@ -296,63 +296,99 @@ header i {
   box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
   display: flex;
   flex-direction: row;
-  animation: slidedown 0.9s forwards;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  transform: scale(0);
+  overflow: hidden;
+  animation: slidedown 1s;
 }
-.la-palette-du-gout .delay-1 {
+.presentation .delay-1 {
   animation-delay: 0.1s;
 }
-.la-palette-du-gout .delay-2 {
+.presentation .delay-2 {
   animation-delay: 0.2s;
 }
-.la-palette-du-gout .delay-3 {
+.presentation .delay-3 {
   animation-delay: 0.3s;
 }
-.la-palette-du-gout .delay-4 {
+.presentation .delay-4 {
   animation-delay: 0.4s;
 }
-.la-palette-du-gout .delay-5 {
+.presentation .delay-5 {
   animation-delay: 0.5s;
 }
-.la-palette-du-gout .delay-6 {
+.presentation .delay-6 {
   animation-delay: 0.6s;
 }
-.la-palette-du-gout .delay-7 {
+.presentation .delay-7 {
   animation-delay: 0.7s;
 }
-.la-palette-du-gout .delay-8 {
+.presentation .delay-8 {
   animation-delay: 0.8s;
 }
-.la-palette-du-gout .delay-9 {
+.presentation .delay-9 {
   animation-delay: 0.9s;
 }
-.la-palette-du-gout .delay-10 {
+.presentation .delay-10 {
   animation-delay: 1s;
 }
-.la-palette-du-gout .plat__text {
+.presentation .plat__text {
   font-size: 4vw;
   margin-left: 3.7vw;
   width: 70vw;
-}
-.la-palette-du-gout .plat__text h3 {
-  margin-top: 4vw;
-  margin-bottom: 2vw;
-  font-size: 4.7vw;
-}
-.la-palette-du-gout .plat__text p {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  margin: 0;
 }
-.la-palette-du-gout .plat__prix {
+.presentation .plat__text h3 {
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+  font-size: 4.7vw;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.presentation .plat__text p {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.presentation .plat__prix {
   font-size: 4vw;
-  margin-top: 11.5vw;
-  margin-right: auto;
+  margin-top: 12vw;
+  margin-right: 7vw;
   margin-left: 8vw;
 }
-.la-palette-du-gout button {
+.presentation .confirmation {
+  width: 0;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: all 0.7s;
+}
+.presentation .plat:hover .confirmation {
+  transform: scaleX(1);
+  width: 17vw;
+}
+.presentation .confirmation__icon {
+  color: #99E2D0;
+  background-color: white;
+  width: 6.5vw;
+  height: 6vw;
+  padding-top: 0.5vw;
+  display: flex;
+  font-size: 4vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20vw;
+  transform: rotate(360deg);
+  transition-duration: 0.9s;
+}
+.presentation .plat:hover .confirmation__icon {
+  transform: rotate(0);
+}
+.presentation button {
   width: 45vw;
   height: 11vw;
   font-size: 4vw;
@@ -361,6 +397,7 @@ header i {
   border: none;
   box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
   border-radius: 25vw;
+  margin-top: 6vw;
 }
 
 /*# sourceMappingURL=style.css.map */
