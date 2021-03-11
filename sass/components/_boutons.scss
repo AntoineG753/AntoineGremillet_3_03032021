@@ -1,0 +1,24 @@
+/* BOUTTON HOME PAGE */
+.boutton {
+    width: 53vw;
+    height: 11vw;
+    font-size: 4vw;
+    color: white;
+    background: linear-gradient(357deg, $primaire ,$secondaire);
+    border: none;
+    box-shadow: $box-shadow;
+    border-radius: 25vw;
+}
+/* BOUTTON PAGE RESTAURANT */
+.boutton-restaurant{
+    width: 45vw;
+    height: 11vw;
+    font-size: 4vw;
+    color: white;
+    background: linear-gradient(357deg, $primaire ,$secondaire);
+    border: none;
+    box-shadow: $box-shadow;
+    border-radius: 25vw;
+    margin-top: 6vw;
+   
+}

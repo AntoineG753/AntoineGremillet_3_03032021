@@ -1,0 +1,39 @@
+.presentation{
+    background-color: $gris-clair;
+    border-radius: 12vw 12vw 0 0;
+    margin-top: -13vw;
+    position: relative;
+    padding-bottom: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__h1{
+        font-family: Shrikhand;
+        font-weight: 500;
+        margin-left: $margin-left-page;
+        margin-top: 0;
+        padding-top: 8vw;
+        font-size: 7.5vw;
+        display: flex;
+        width: 95vw;
+    }
+    &__div{
+        height: auto;
+        margin-bottom: 4vw;
+        width: 95vw;
+    }
+    &__div h2{
+        font-size: 5vw;
+        font-weight: 500;
+        margin-bottom: 0.8vw;
+        margin-left: 1.7vw;
+    }
+    &__div span{
+        display: block;
+        width: 13vw;
+        border-bottom: 0.9vw solid $tertiaire;
+        margin-bottom: 3vw;
+        margin-left: 2vw;
+    }
+    @include plats;
+}

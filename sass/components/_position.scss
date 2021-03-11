@@ -1,0 +1,46 @@
+.lieu{
+    background-color: $gris-clair;
+    width: 100%;
+    height: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__header{
+        background-color: $gris-foncer;
+        width: 100%;
+        height: 13vw;
+        display: flex;
+        flex-direction: row;
+        box-shadow: inset 0vw 3vw 1vw -2vw rgb(204, 204, 204);
+    }
+    &__header i{
+        font-size: 4.4vw;
+        margin-right: 4.5vw;
+        margin-left: 28vw;
+        margin-top: 4.6vw;
+    }
+    &__header p{
+        @include roboto;
+        font-size: 4.4vw;
+    }
+    &__body{
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    &__body h1{
+        font-size: $titre-section;
+        text-align: center;
+        margin-top: 9vw;
+        margin-bottom: 3vw;
+    }
+    &__body p{
+        font-size: 4.5vw;
+        margin-top: 0;
+        margin-bottom: 7vw;
+    }
+    
+}

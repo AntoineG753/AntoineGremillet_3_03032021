@@ -1,4 +1,7 @@
-@keyframes slidedown {
+/* ANIMATION AU SURVOLE DANS LA SECTION FONCTIONNEMENT */
+/* ANIMATION AU SURVOLE POUR LES LIKES */
+/* ANIMATION D'APPARITION DES CARDS */
+@keyframes pop {
   from {
     transform: scale(0);
   }
@@ -6,9 +9,29 @@
     transform: scale(1);
   }
 }
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
+/* BOUTTON HOME PAGE */
+.boutton {
+  width: 53vw;
+  height: 11vw;
+  font-size: 4vw;
+  color: white;
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  border: none;
+  box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
+  border-radius: 25vw;
+}
+
+/* BOUTTON PAGE RESTAURANT */
+.boutton-restaurant {
+  width: 45vw;
+  height: 11vw;
+  font-size: 4vw;
+  color: white;
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  border: none;
+  box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
+  border-radius: 25vw;
+  margin-top: 6vw;
 }
 
 header {
@@ -77,15 +100,17 @@ header i {
   margin-top: 0;
   margin-bottom: 7vw;
 }
-.lieu__body button {
-  width: 53vw;
-  height: 11vw;
-  font-size: 4vw;
-  color: white;
-  background: linear-gradient(357deg, #9356DC, #FF79DA);
-  border: none;
-  box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
-  border-radius: 25vw;
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* RESTAURANT */
+.restaurant-body-img {
+  width: 100%;
+  height: 65vw;
+  object-fit: cover;
 }
 
 .fonctionnement {
@@ -136,7 +161,6 @@ header i {
 }
 .fonctionnement p {
   font-size: 5vw;
-  text-shadow: red;
 }
 
 .restaurant {
@@ -244,13 +268,6 @@ header i {
   font-size: 2.8vw;
 }
 
-/* PAGE RESTAURANT  */
-.body__image {
-  width: 100%;
-  height: 65vw;
-  object-fit: cover;
-}
-
 .presentation {
   background-color: #f7f7f7;
   border-radius: 12vw 12vw 0 0;
@@ -299,7 +316,7 @@ header i {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  animation: slidedown 1s;
+  animation: pop 1s;
 }
 .presentation .delay-1 {
   animation-delay: 0.1s;
@@ -389,17 +406,6 @@ header i {
 }
 .presentation .plat:hover .confirmation__icon {
   transform: rotate(0);
-}
-.presentation button {
-  width: 45vw;
-  height: 11vw;
-  font-size: 4vw;
-  color: white;
-  background: linear-gradient(357deg, #9356DC, #FF79DA);
-  border: none;
-  box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
-  border-radius: 25vw;
-  margin-top: 6vw;
 }
 
 /*# sourceMappingURL=style.css.map */
