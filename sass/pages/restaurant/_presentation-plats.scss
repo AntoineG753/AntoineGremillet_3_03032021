@@ -16,6 +16,10 @@
         font-size: 7.5vw;
         display: flex;
         width: 95vw;
+        @include tablette-only{
+            font-size: 6.5vw;
+            align-items: center;
+        }
     }
     &__div{
         height: auto;
@@ -27,6 +31,10 @@
         font-weight: 500;
         margin-bottom: 0.8vw;
         margin-left: 1.7vw;
+        @include tablette-only{
+            text-align: center;
+            margin-left: 0;
+        }
     }
     &__div span{
         display: block;
@@ -34,6 +42,11 @@
         border-bottom: 0.9vw solid $tertiaire;
         margin-bottom: 3vw;
         margin-left: 2vw;
+        @include tablette-only{
+            margin-left: auto;
+            margin-right: auto;
+            width: 16vw;
+        }
     }
     @include plats;
 }

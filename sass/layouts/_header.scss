@@ -6,6 +6,9 @@ header{
         width: 45vw;
         margin-top: 5vw;
         margin-bottom: 3.8vw;
+        @include tablette-only{
+            width: 35vw;
+        }
     }
     a{
         text-decoration: none;
@@ -16,5 +19,9 @@ header{
         position: absolute;
         left: 7.1vw;
         top: 6.6vw;
+        @include tablette-only{
+            top: 6vw;
+            font-size: 4vw;
+        }
     }
 }

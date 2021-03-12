@@ -4,16 +4,28 @@
     background-color: rgb(36, 36, 36);
     color: white;
     padding-top: 5vw;
+    @include tablette-only{
+        height: 40vw;
+    }
     &__logo{
         font-family: Shrikhand;
         font-size: 6vw;
         margin-left: 8.5vw;
+        @include tablette-only{
+            font-size: 4vw;
+        }
     }
     p{
         margin-left: 8.5vw;
         font-size: 3.8vw;
+        @include tablette-only{
+            font-size: 3vw;
+        }
     }
     .fa-hands-helping{
         font-size: 2.8vw;
+        @include tablette-only{
+            font-size: 2.3vw;
+        }
     }
 }

@@ -9,9 +9,9 @@
 }
 /* ANIMATION AU SURVOLE POUR LES LIKES */
 @mixin hover-like {
-    -webkit-background-clip: text;
+        -webkit-background-clip: text;
         -moz-background-clip: text;
-        -webkit-text-fill-color: transparent; 
+        -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
         transform-origin: center;
         background-image: linear-gradient(357deg, $primaire ,$secondaire);
@@ -20,7 +20,6 @@
         &:hover{
            opacity: 1;
            transform: scale(1.12);
-           width: 6.579vw;
         }
 }
 /* ANIMATION D'APPARITION DES CARDS */

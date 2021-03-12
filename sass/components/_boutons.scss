@@ -8,6 +8,10 @@
     border: none;
     box-shadow: $box-shadow;
     border-radius: 25vw;
+    @include tablette-only{
+        font-size: 3.5vw;
+        width: 49vw;
+    }
 }
 /* BOUTTON PAGE RESTAURANT */
 .boutton-restaurant{
@@ -20,5 +24,8 @@
     box-shadow: $box-shadow;
     border-radius: 25vw;
     margin-top: 6vw;
-   
+    @include tablette-only{
+        font-size: 3.7vw;
+        width: 38vw;
+    }
 }

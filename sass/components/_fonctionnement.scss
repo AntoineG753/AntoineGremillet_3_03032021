@@ -8,6 +8,9 @@
         text-align: left;
         width: 90vw;
         font-size: $titre-section;
+        @include tablette-only{
+        width: 50vw;
+        }
     }
     &__div{
         width: 86vw;
@@ -19,25 +22,41 @@
         align-items: center;
         display: flex;
         flex-direction: row;
+        @include tablette-only{
+            width: 72vw;
+            height: 14vw;
+            border-radius: 4.5vw;
+        }
         @include hover-fonctionnement;
     }
     span{
         background-color: $primaire;
         width: 6.2vw;
         height: 6.2vw;
-        border-radius: 100%;display: flex;
+        border-radius: 100%;
+        display: flex;
         align-items: center;
         justify-content: center;
         font-size: 3vw;
         color: white;
         margin-left: -2.7vw;
         margin-right: 5vw;
+        @include tablette-only{
+            width: 5.6vw;
+            height: 5.6vw;
+        }
     }
     i{
         margin-right: 5vw;
         font-size: 5vw;
+        @include tablette-only{
+            font-size: 4.2vw;
+        }
     }
     p{
         font-size: 5vw;
+        @include tablette-only{
+            font-size: 4.2vw;
+        }
     }
 }

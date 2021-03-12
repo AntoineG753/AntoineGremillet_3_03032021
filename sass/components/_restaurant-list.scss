@@ -1,12 +1,22 @@
 .restaurant{
     background-color: $gris-clair;
     padding: 4.5vw;
+    @include tablette-only{
+        .contenaire-restaurant{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
     a{
         text-decoration: none;
         color: black;
     }
     h2{
         font-size: $titre-section;
+        @include tablette-only{
+            text-align: center;
+        }
     }
     &__div{
         height: 65vw;
@@ -14,6 +24,12 @@
         margin-bottom: 6vw;
         background-color: white;
         box-shadow: $box-shadow;
+        position: relative;
+        @include tablette-only{
+            width: 43.7vw;
+            height: 36vw;
+            border-radius: 3vw;
+        }
     }
     .nouveau{
         background-color: $tertiaire;
@@ -25,10 +41,17 @@
         align-items: center;
         position: absolute;
         margin-top: 3vw;
-        right: 8vw;
+        right: 5.5vw;
         font-size: 3.8vw;
         font-weight: 700;
         color: darken($tertiaire, 40);
+        @include tablette-only{
+            width: 12vw;
+            height: 4vw;
+            font-size: 2.2vw;
+            right: 3vw;
+            margin-top: 2vw;
+        }
     }
     &__div div{
         display: flex;
@@ -37,30 +60,50 @@
         width: auto;
         margin-left: 2vw;
         justify-content: center;
+        @include tablette-only{
+            margin-left: 1.2vw;
+        }
     }
     &__heart{
         position: absolute;
         font-size: 6.4vw;
-        right: 10vw;
+        right: 7vw;
         margin-top: 1.7vw;
+        @include tablette-only{
+            font-size: 3.5vw;
+            right: 5vw;
+            margin-top: 0vw;
+        }
     }
     &__heart-like{
         background-size: 100%;
         font-size: 6.4vw;
-        right: 10vw;
+        right: 6.95vw;
         margin-top: 1.7vw;
         position: absolute;
         @include hover-like;
+        @include tablette-only{
+            font-size: 3.5vw;
+            right: 5vw;
+            margin-top: 0vw;
+        }
     }
     h3{
         margin-top: 1.5vw;
         margin-bottom: 1vw;
         font-size: 5vw;
+        @include tablette-only{
+            font-size: 3vw;
+            margin-bottom: 0;
+        }
     }
     p{
         margin-top: 0.5vw;
         margin-bottom: 0;
         font-size: 4.7vw;
+        @include tablette-only{
+            font-size: 3vw;
+        }
     }
     img{
         width: 100%;
@@ -68,5 +111,9 @@
         border-radius: 6vw 6vw 0 0;
         object-fit: cover;
         object-position: center;
+        @include tablette-only{
+            height: 24.5vw;
+            border-radius: 3vw 3vw 0 0 ;
+        }
     }
 }

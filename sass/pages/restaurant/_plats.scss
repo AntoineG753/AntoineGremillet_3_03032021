@@ -10,6 +10,9 @@
         flex-direction: row;
         overflow: hidden;
         @include apparition-card;
+        @include tablette-only{
+            height: 17vw;
+        }
     }
     @for $i from 1 through 10 {
         .delay-#{$i}{
@@ -21,12 +24,19 @@
         margin-left: 3.7vw;
         width: 70vw;
         @include ellipsis;
+        @include tablette-only{
+            font-size: 4vw;
+        }
     }
     .plat__text h3{
         margin-top: 4vw;
         margin-bottom: 2vw;
         font-size: 4.7vw;
         @include ellipsis;
+        @include tablette-only{
+            font-size: 4vw;
+            margin-top: 2vw;
+        }
     }
     .plat__text p{
         margin: 0;
@@ -37,6 +47,10 @@
         margin-top: 12vw;
         margin-right: 7vw;
         margin-left: 8vw;
+        @include tablette-only{
+            font-size: 4vw;
+            margin-top: 9vw;
+        }
     }
     @include confirmation-plat;
 }
