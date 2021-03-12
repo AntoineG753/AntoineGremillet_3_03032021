@@ -14,3 +14,15 @@
         @content;
     }
 }
+@mixin desktop-only {
+    @media screen and(min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}
+@mixin rond-loader {
+        border-left: 0.4vw solid transparent;
+        border-right: 0.4vw solid transparent;
+        border-bottom: 0.4vw solid transparent;
+        position: absolute;
+        border-radius: 100%;
+}

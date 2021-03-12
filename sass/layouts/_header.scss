@@ -9,6 +9,11 @@ header{
         @include tablette-only{
             width: 35vw;
         }
+        @include desktop-only{
+            width: 15vw;
+            margin-top: 1.7vw;
+            margin-bottom: 1.7vw;
+        }
     }
     a{
         text-decoration: none;
@@ -22,6 +27,10 @@ header{
         @include tablette-only{
             top: 6vw;
             font-size: 4vw;
+        }
+        @include desktop-only{
+            top: 2.4vw;
+            font-size: 1.3vw;
         }
     }
 }

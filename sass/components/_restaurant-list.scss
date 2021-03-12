@@ -12,12 +12,24 @@
             justify-content: space-between;
         }
     }
+    @include desktop-only{
+            padding: 0;
+            .contenaire-restaurant{
+                display: flex;
+                flex-wrap: wrap;
+                width: 65vw;
+                justify-content: space-between;
+            }
+    }
     a{
         text-decoration: none;
         color: black;
     }
     h2{
         font-size: $titre-section;
+        @include desktop-only{
+            font-size: 3.4vw;
+        }
     }
     &__div{
         height: 65vw;
@@ -31,6 +43,12 @@
             height: 36vw;
             border-radius: 3vw;
         }
+        @include desktop-only{
+            width: 30vw;
+            height: 19vw;
+            border-radius: 1.8vw ;
+            margin-bottom: 4vw;
+        }
     }
     .nouveau{
         background-color: $tertiaire;
@@ -41,8 +59,8 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        margin-top: 3vw;
-        right: 5.5vw;
+        margin-top: 3%;
+        right: 6%;
         font-size: 3.8vw;
         font-weight: 700;
         color: darken($tertiaire, 40);
@@ -50,8 +68,12 @@
             width: 12vw;
             height: 4vw;
             font-size: 2.2vw;
-            right: 3vw;
-            margin-top: 2vw;
+        }
+        @include desktop-only{
+            width: 6vw;
+            height: 2.2vw;
+            font-size: 1.2vw;
+            border-radius: 0.2vw;
         }
     }
     &__div div{
@@ -59,34 +81,35 @@
         flex-direction: column;
         height: auto;
         width: auto;
-        margin-left: 2vw;
+        margin-left: 2%;
         justify-content: center;
-        @include tablette-only{
-            margin-left: 1.2vw;
-        }
     }
     &__heart{
         position: absolute;
         font-size: 6.4vw;
-        right: 7vw;
+        right: 8%;
         margin-top: 1.7vw;
         @include tablette-only{
             font-size: 3.5vw;
-            right: 5vw;
             margin-top: 0vw;
+        }
+        @include desktop-only{
+            font-size: 2vw;
         }
     }
     &__heart-like{
         background-size: 100%;
         font-size: 6.4vw;
-        right: 6.95vw;
+        right: 8%;
         margin-top: 1.7vw;
         position: absolute;
         @include hover-like;
         @include tablette-only{
             font-size: 3.5vw;
-            right: 5vw;
             margin-top: 0vw;
+        }
+        @include desktop-only{
+            font-size: 2vw;
         }
     }
     h3{
@@ -97,6 +120,11 @@
             font-size: 3vw;
             margin-bottom: 0;
         }
+        @include desktop-only{
+            font-size: 1.5vw;
+            margin-top: 0.5vw;
+            margin-bottom: 0;
+        }
     }
     p{
         margin-top: 0.5vw;
@@ -104,6 +132,9 @@
         font-size: 4.7vw;
         @include tablette-only{
             font-size: 3vw;
+        }
+        @include desktop-only{
+            font-size: 1.3vw;
         }
     }
     img{
@@ -115,6 +146,10 @@
         @include tablette-only{
             height: 24.5vw;
             border-radius: 3vw 3vw 0 0 ;
+        }
+        @include desktop-only{
+            height: 13vw;
+            border-radius: 1.8vw 1.8vw 0 0 ;
         }
     }
 }

@@ -2,6 +2,7 @@ $gris-clair: rgb(247, 247, 247);
 $gris-foncer: rgb(230, 230, 230);
 $titre-section: 6.8vw;
 $box-shadow: 0vw 0.6vw 5vw 0.2vw rgb(224, 222, 222);
+$boutton-shadow: 0vw 0vw 0.3vw 0.01vw rgb(122, 122, 122);
 $primaire: #9356DC;
 $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
@@ -9,5 +10,6 @@ $margin-left-page: 4.5vw;
 $margin-right-page: 4.5vw;
 $text-plat: 4vw;
 $breakpoints: (
-    tablette: 768px
+    tablette: 768px,
+    desktop: 1440px
 );

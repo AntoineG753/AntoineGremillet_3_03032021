@@ -7,6 +7,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include desktop-only{
+        width: 55vw;
+        margin-top: 5vw;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5vw 5vw 0 0;
+        padding-bottom: 5vw;
+    }
     &__h1{
         font-family: Shrikhand;
         font-weight: 500;
@@ -20,11 +28,24 @@
             font-size: 6.5vw;
             align-items: center;
         }
+        @include desktop-only{
+            font-size: 3vw;
+            width: 32vw;
+            padding-top: 2vw;
+            margin-bottom: 0;
+        }
     }
     &__div{
         height: auto;
         margin-bottom: 4vw;
         width: 95vw;
+        @include desktop-only{
+            width: 55vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1vw;
+        }
     }
     &__div h2{
         font-size: 5vw;
@@ -34,6 +55,10 @@
         @include tablette-only{
             text-align: center;
             margin-left: 0;
+        }
+        @include desktop-only{
+            font-size: 2vw;
+            margin-bottom: 0;
         }
     }
     &__div span{
@@ -46,6 +71,11 @@
             margin-left: auto;
             margin-right: auto;
             width: 16vw;
+        }
+        @include desktop-only{
+            width: 9vw;
+            margin-bottom: 1vw;
+            border-bottom: 0.3vw solid $tertiaire;
         }
     }
     @include plats;

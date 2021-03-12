@@ -7,12 +7,24 @@
     @include tablette-only{
         height: 40vw;
     }
+    @include desktop-only{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-top: 1vw;
+    }
     &__logo{
         font-family: Shrikhand;
         font-size: 6vw;
         margin-left: 8.5vw;
         @include tablette-only{
             font-size: 4vw;
+        }
+        @include desktop-only{
+            font-size: 2vw;
+            margin-left: 0;
         }
     }
     p{
@@ -21,11 +33,22 @@
         @include tablette-only{
             font-size: 3vw;
         }
+        @include desktop-only{
+            font-size: 1vw;
+            margin-left: 0;
+        }
     }
     .fa-hands-helping{
         font-size: 2.8vw;
         @include tablette-only{
             font-size: 2.3vw;
         }
+        @include desktop-only{
+            font-size: 0.85vw;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: white;
     }
 }

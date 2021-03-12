@@ -59,4 +59,16 @@
     .plat:hover .confirmation__icon{
         transform: rotate(0);
     }
+    @include desktop-only{
+        .plat:hover .confirmation{
+            transform: scaleX(1);
+            width: 15vw;
+        }
+        .confirmation__icon{
+            width: 2.5vw;
+            height: 2.5vw;
+            padding-top: 0;
+            font-size: 1.2vw;
+        }
+    }
 }
