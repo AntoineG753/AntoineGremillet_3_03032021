@@ -2,9 +2,13 @@
     background-color: $gris-clair;
     padding: 4.5vw;
     @include tablette-only{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .contenaire-restaurant{
             display: flex;
             flex-wrap: wrap;
+            width: 92vw;
             justify-content: space-between;
         }
     }
@@ -14,9 +18,6 @@
     }
     h2{
         font-size: $titre-section;
-        @include tablette-only{
-            text-align: center;
-        }
     }
     &__div{
         height: 65vw;

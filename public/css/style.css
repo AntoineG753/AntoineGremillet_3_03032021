@@ -229,9 +229,15 @@ body {
   padding: 4.5vw;
 }
 @media screen and (min-width: 768px) {
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .restaurant .contenaire-restaurant {
     display: flex;
     flex-wrap: wrap;
+    width: 92vw;
     justify-content: space-between;
   }
 }
@@ -241,11 +247,6 @@ body {
 }
 .restaurant h2 {
   font-size: 6.8vw;
-}
-@media screen and (min-width: 768px) {
-  .restaurant h2 {
-    text-align: center;
-  }
 }
 .restaurant__div {
   height: 65vw;
