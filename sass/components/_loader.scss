@@ -10,34 +10,58 @@
     transition: 0.01s;
     animation: loader 12s forwards;
     &__contenaire{
-        width: 10vw;
-        height: 10vw;
+        width: 15vw;
+        height: 15vw;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     &__contenaire .rond-1{
-        width: 4vw;
-        height: 4vw;
-        border-top: 0.4vw solid $tertiaire;
+        width: 10vw;
+        height: 10vw;
+        border-top: 0.8vw solid $tertiaire;
         @include rond-loader;
         animation: loader-rond 3s;
         animation-delay: 0.4s;
+        @include tablette-only{
+            border-top: 0.6vw solid $tertiaire;
+        }
+        @include desktop-only{
+            width: 6vw;
+            height: 6vw;
+            border-top: 0.3vw solid $tertiaire;
+        }
     }
     &__contenaire .rond-2{
-        width: 2.4vw;
-        height: 2.4vw;
-        border-top: 0.4vw solid $secondaire;
+        width: 6.2vw;
+        height: 6.2vw;
+        border-top: 0.8vw solid $secondaire;
         @include rond-loader;
         animation: loader-rond 3s;
         animation-delay: 0.55s;
+        @include tablette-only{
+            border-top: 0.6vw solid $secondaire;
+        }
+        @include desktop-only{
+            width: 3.8vw;
+            height: 3.8vw;
+            border-top: 0.3vw solid $secondaire;
+        }
     }
     &__contenaire .rond-3{
-        width: 0.7vw;
-        height: 0.7vw;
-        border-top: 0.4vw solid $primaire;
+        width: 2.5vw;
+        height: 2.5vw;
+        border-top: 0.8vw solid $primaire;
         @include rond-loader;
         animation: loader-rond 3s;
         animation-delay: 0.65s;
+        @include tablette-only{
+            border-top: 0.3vw solid $primaire;
+        }
+        @include desktop-only{
+            width: 1.6vw;
+            height: 1.6vw;
+            border-top: 0.3vw solid $primaire;
+        }
     }
 }

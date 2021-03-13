@@ -20,9 +20,19 @@
     }
 }
 @mixin rond-loader {
-        border-left: 0.4vw solid transparent;
-        border-right: 0.4vw solid transparent;
-        border-bottom: 0.4vw solid transparent;
+        border-left: 0.8vw solid transparent;
+        border-right: 0.8vw solid transparent;
+        border-bottom: 0.8vw solid transparent;
         position: absolute;
         border-radius: 100%;
+        @include tablette-only{
+            border-left: 0.6vw solid transparent;
+            border-right: 0.6vw solid transparent;
+            border-bottom: 0.6vw solid transparent;
+        }
+        @include desktop-only{
+            border-left: 0.3vw solid transparent;
+            border-right: 0.3vw solid transparent;
+            border-bottom: 0.3vw solid transparent;
+        }
 }

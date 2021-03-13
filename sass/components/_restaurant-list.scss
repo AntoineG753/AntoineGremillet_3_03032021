@@ -17,7 +17,7 @@
             .contenaire-restaurant{
                 display: flex;
                 flex-wrap: wrap;
-                width: 65vw;
+                width: 95vw;
                 justify-content: space-between;
             }
     }
@@ -44,7 +44,7 @@
             border-radius: 3vw;
         }
         @include desktop-only{
-            width: 30vw;
+            width: 22vw;
             height: 19vw;
             border-radius: 1.8vw ;
             margin-bottom: 4vw;
