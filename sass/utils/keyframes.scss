@@ -8,8 +8,8 @@
     }
 }
 @keyframes loader{
-    100%{
-        z-index: -10;
+    to{
+       z-index: -10;
     }
 }
 @keyframes loader-rond{
