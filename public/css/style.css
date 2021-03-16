@@ -507,7 +507,8 @@ body {
 @media screen and (min-width: 1440px) {
   .restaurant-body-img {
     position: absolute;
-    height: 93.65vw;
+    height: 99.4vw;
+    z-index: -2;
   }
 }
 

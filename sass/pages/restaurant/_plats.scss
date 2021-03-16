@@ -20,11 +20,7 @@
             margin-bottom: 0.8vw;
         }
     }
-    @for $i from 1 through 10 {
-        .delay-#{$i}{
-            animation-delay: #{$i/10}s;
-        }
-    }
+    @include boucle;
     .plat__text{
         font-size: $text-plat;
         margin-left: 3.7vw;

@@ -9,6 +9,7 @@ body{
     object-fit:cover;
     @include desktop-only{
         position: absolute;
-        height: 93.65vw; 
+        height: 99.4vw; 
+        z-index: -2;
     }
 }
