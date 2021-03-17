@@ -39,8 +39,14 @@
     }
     @include tablette-only{
         margin-top: 3vw;
-        font-size: 1.1vw;
-        width: 15vw;
+        font-size: 2vw;
+        width: 35vw;
+        height: 6vw;
+    }
+    @include desktop-only{
+        margin-top: 3vw;
+        font-size: 1.3vw;
+        width: 14vw;
         height: 3vw;
     }
 }

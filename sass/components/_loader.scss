@@ -55,7 +55,7 @@
         animation: loader-rond 3s;
         animation-delay: 0.65s;
         @include tablette-only{
-            border-top: 0.3vw solid $primaire;
+            border-top: 0.6vw solid $primaire;
         }
         @include desktop-only{
             width: 1.6vw;

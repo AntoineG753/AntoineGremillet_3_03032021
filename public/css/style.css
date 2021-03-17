@@ -123,7 +123,7 @@
 }
 @media screen and (min-width: 768px) {
   .loader__contenaire .rond-3 {
-    border-top: 0.3vw solid #9356DC;
+    border-top: 0.6vw solid #9356DC;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -289,7 +289,7 @@
 }
 @media screen and (min-width: 768px) {
   .loader__contenaire .rond-3 {
-    border-top: 0.3vw solid #9356DC;
+    border-top: 0.6vw solid #9356DC;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -348,8 +348,16 @@
 @media screen and (min-width: 768px) {
   .boutton-restaurant {
     margin-top: 3vw;
-    font-size: 1.1vw;
-    width: 15vw;
+    font-size: 2vw;
+    width: 35vw;
+    height: 6vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .boutton-restaurant {
+    margin-top: 3vw;
+    font-size: 1.3vw;
+    width: 14vw;
     height: 3vw;
   }
 }
@@ -1126,8 +1134,7 @@ body {
     margin-left: 0;
   }
 }
-
-.confirmation {
+.presentation .confirmation {
   width: 0;
   background-color: #99E2D0;
   display: flex;
@@ -1137,13 +1144,16 @@ body {
   transform: scaleX(0);
   transition: all 0.7s;
 }
-
-.plat:hover .confirmation {
+@media screen and (min-width: 1440px) {
+  .presentation .confirmation {
+    transition: transform 0.5s, width 0.15s;
+  }
+}
+.presentation .plat:hover .confirmation {
   transform: scaleX(1);
   width: 17vw;
 }
-
-.confirmation__icon {
+.presentation .confirmation__icon {
   color: #99E2D0;
   background-color: white;
   width: 6.5vw;
@@ -1157,18 +1167,15 @@ body {
   transform: rotate(360deg);
   transition-duration: 0.9s;
 }
-
-.plat:hover .confirmation__icon {
+.presentation .plat:hover .confirmation__icon {
   transform: rotate(0);
 }
-
 @media screen and (min-width: 1440px) {
-  .plat:hover .confirmation {
+  .presentation .plat:hover .confirmation {
     transform: scaleX(1);
     width: 15vw;
   }
-
-  .confirmation__icon {
+  .presentation .confirmation__icon {
     width: 2.5vw;
     height: 2.5vw;
     padding-top: 0;
