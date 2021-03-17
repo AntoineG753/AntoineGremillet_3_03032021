@@ -493,25 +493,6 @@ header i {
   }
 }
 
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-/* RESTAURANT */
-.restaurant-body-img {
-  width: 100%;
-  height: 60vw;
-  object-fit: cover;
-}
-@media screen and (min-width: 1440px) {
-  .restaurant-body-img {
-    position: absolute;
-    height: 99.4vw;
-    z-index: -2;
-  }
-}
-
 .fonctionnement {
   width: 100%;
   height: 90vw;
@@ -837,6 +818,12 @@ body {
   }
 }
 
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* RESTAURANT */
 .footer {
   width: 100%;
   height: 50vw;
@@ -906,6 +893,19 @@ body {
 .footer a {
   text-decoration: none;
   color: white;
+}
+
+.restaurant-body-img {
+  width: 100%;
+  height: 60vw;
+  object-fit: cover;
+}
+@media screen and (min-width: 1440px) {
+  .restaurant-body-img {
+    position: absolute;
+    height: 99.4vw;
+    z-index: -2;
+  }
 }
 
 .presentation {
@@ -1126,7 +1126,8 @@ body {
     margin-left: 0;
   }
 }
-.presentation .confirmation {
+
+.confirmation {
   width: 0;
   background-color: #99E2D0;
   display: flex;
@@ -1136,11 +1137,13 @@ body {
   transform: scaleX(0);
   transition: all 0.7s;
 }
-.presentation .plat:hover .confirmation {
+
+.plat:hover .confirmation {
   transform: scaleX(1);
   width: 17vw;
 }
-.presentation .confirmation__icon {
+
+.confirmation__icon {
   color: #99E2D0;
   background-color: white;
   width: 6.5vw;
@@ -1154,15 +1157,18 @@ body {
   transform: rotate(360deg);
   transition-duration: 0.9s;
 }
-.presentation .plat:hover .confirmation__icon {
+
+.plat:hover .confirmation__icon {
   transform: rotate(0);
 }
+
 @media screen and (min-width: 1440px) {
-  .presentation .plat:hover .confirmation {
+  .plat:hover .confirmation {
     transform: scaleX(1);
     width: 15vw;
   }
-  .presentation .confirmation__icon {
+
+  .confirmation__icon {
     width: 2.5vw;
     height: 2.5vw;
     padding-top: 0;
