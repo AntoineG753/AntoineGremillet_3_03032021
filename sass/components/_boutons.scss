@@ -8,6 +8,9 @@
     border: none;
     box-shadow: $boutton-shadow;
     border-radius: 25vw;
+    &:focus{
+        outline:0;
+    }
     &:hover{
         box-shadow: 0vw 0vw 0.5vw 0.01vw rgb(122, 122, 122);
         background: linear-gradient(357deg, #a16be0 ,#ff93e1);
@@ -33,15 +36,18 @@
     box-shadow: $boutton-shadow;
     border-radius: 25vw;
     margin-top: 6vw;
+    &:focus{
+        outline:0;
+    }
     &:hover{
         box-shadow: 0vw 0vw 0.5vw 0.01vw rgb(122, 122, 122);
         background: linear-gradient(357deg, #a16be0 ,#ff93e1);
     }
     @include tablette-only{
         margin-top: 3vw;
-        font-size: 2vw;
-        width: 35vw;
-        height: 6vw;
+        font-size: 3vw;
+        width: 33vw;
+        height: 7vw;
     }
     @include desktop-only{
         margin-top: 3vw;
