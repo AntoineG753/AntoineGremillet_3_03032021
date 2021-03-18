@@ -22,11 +22,6 @@
            transform: scale(1.12);
         }
 }
-/* ANIMATION D'APPARITION DES CARDS */
-@mixin apparition-card {
-    animation: pop 1s;
-}
-
 @mixin confirmation-plat {
     .confirmation{
         width: 0;
@@ -74,4 +69,4 @@
             font-size: 1.2vw;
         }
     }
-}
+} 
